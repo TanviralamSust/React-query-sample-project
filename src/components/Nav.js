@@ -5,6 +5,9 @@ export default function Nav() {
   return (
     <>
       <div className="navbar">
+        <NavLink className="nav-items" to="/">
+          Home
+        </NavLink>
         <NavLink
           className={(navInfo) =>
             navInfo.isActive ? "nav-items-active" : "nav-items"
