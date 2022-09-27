@@ -1,17 +1,27 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Navbar.scss";
 
 export default function Nav() {
   return (
     <>
       <div className="navbar">
-        <Link className="nav-items" to="/">
-          Home
-        </Link>
+        <NavLink
+          className={(navInfo) =>
+            navInfo.isActive ? "nav-items-active" : "nav-items"
+          }
+          to="/user/:id"
+        >
+          User
+        </NavLink>
 
-        <Link className="nav-items" to="/user-create/:id">
+        <NavLink
+          className={(navInfo) =>
+            navInfo.isActive ? "nav-items-active" : "nav-items"
+          }
+          to="/user-create/:id"
+        >
           UserIntegration
-        </Link>
+        </NavLink>
       </div>
     </>
   );
