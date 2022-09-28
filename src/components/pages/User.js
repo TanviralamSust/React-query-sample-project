@@ -20,6 +20,7 @@ export default function User() {
         {cachedComment.map((comment, index) => (
             <div className="post-container" key={index}>
               <span className="post-details">{comment.id}</span>
+              <span className="post-details">{comment.postId}</span>
               <span className="post-details">{comment.name}</span>
               <span className="post-details">{comment.email}</span>
               <span className="post-details">{comment.body}</span>
