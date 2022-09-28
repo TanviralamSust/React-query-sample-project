@@ -1,5 +1,8 @@
+import IntegrationForm from "../IntegrationForm";
 export default function UserIntegration() {
-    return(
-        <div>Create and Update user</div>
-    )
+  return (
+    <div>
+      <IntegrationForm></IntegrationForm>
+    </div>
+  );
 }
